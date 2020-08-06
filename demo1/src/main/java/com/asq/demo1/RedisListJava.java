@@ -19,5 +19,7 @@ public class RedisListJava {
 		for (int i = 0; i <list.size() ; i++) {
 			System.out.println("列表项为:"+list.get(i));
 		}
+		System.out.println("lpop:"+jedis.lpop("site-list"));
+		System.out.println("rpop:"+jedis.rpop("site-list"));
 	}
 }
