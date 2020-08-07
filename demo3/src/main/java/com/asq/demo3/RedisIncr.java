@@ -5,8 +5,9 @@ import redis.clients.jedis.Jedis;
 /**
  * @author liujian
  * @date 2020/8/7
+ * 数值的自增和自减
  */
-public class StringRedis {
+public class RedisIncr {
 
 	public static void main(String []args) {
 		Jedis jedis=new Jedis("localhost");
