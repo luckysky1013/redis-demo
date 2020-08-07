@@ -23,6 +23,7 @@ public class Chapter01 {
 
 	public void run() {
 		Jedis conn = new Jedis("localhost");
+		//Select 命令用于切换到指定的数据库
 		conn.select(15);
 
 		String articleId = postArticle(
